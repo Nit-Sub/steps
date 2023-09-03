@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 
 function App() {
   const messages =[
@@ -6,12 +7,14 @@ function App() {
     "Apply for Jobs",
     "Invest your new income"
   ]
-  const step=1;
+  const [step , setStep]=useState(1)
+
   const handlePrevious=()=>{
-    alert("Previous")
+    if (step>1) setStep(step- 1)
+
   }
   const handleNext=()=>{
-    alert("Next")
+    if (step<3) setStep(step+1)
   }
   return (
       <div className="steps">
