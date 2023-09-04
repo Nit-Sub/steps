@@ -19,7 +19,7 @@ function App() {
   }
 console.log(showhide)
   return (
-    <><div>
+    <>
       <button  className="close"onClick={()=>setShowhide(!showhide)}>&times;</button>
    {
     showhide &&
@@ -37,7 +37,6 @@ console.log(showhide)
   </div>
 
    }
-   </div>
       </>
   );
 }
