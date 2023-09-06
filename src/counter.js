@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './counter.css';
 const Counter = () => {
     const [step, setStep] = useState(1)
-    const [count , setCount] = useState(1)
+    const [count, setCount] = useState(1)
     const handleminusbutton = () => {
-            setStep(step-1)
+        setStep(step - 1)
     }
     const handleplusbutton = () => {
-        setStep(step+1)
-}
+        setStep(step + 1)
+    }
     return (
         <>
             <div className='main'>
