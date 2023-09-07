@@ -9,8 +9,7 @@ const Counter = () => {
     const handleplusbutton = () => {
         setStep(step + 1)
     }
-    return (
-        <>
+    return (<>
             <div className='main'>
                 <div className='body'>
                     <button onClick={handleminusbutton}>-</button>
