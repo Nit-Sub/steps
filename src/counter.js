@@ -10,9 +10,7 @@ const Counter = () => {
     const handleplusbutton = () => {
         setStep(step + 1)
         setTotal(count);
-        console.log(count)
-
-    }
+        console.log(count)}
     const handlecountminusbutton = () => {
         setCount(count - 1)
     }
