@@ -17,10 +17,10 @@ const Counter = () => {
     const handlecountplusbutton = () => {
         setCount(count + 1)
     }
-     // useEffect(() => {
-    //     setTotal(count);
-    //     console.log(count)
-    // }, [count]);
+     useEffect(() => {
+        setTotal(count);
+        console.log(count)
+    }, [count]);
     return (<>
         <div className='main'>
             <div className='body'>
